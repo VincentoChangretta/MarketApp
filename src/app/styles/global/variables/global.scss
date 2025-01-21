@@ -1,0 +1,11 @@
+:root {
+    --font-family: "Outfit", sans-serif;
+
+    --font-ls: 18px;
+    --font-lh: 26px;
+    --font-l: var(--font-ls) / var(--font-lh) var(--font-family);
+
+    --font-ms: 35px;
+    --font-mh: 43px;
+    --font-m: var(--font-ms) / var(--font-mh) var(--font-family);
+}
