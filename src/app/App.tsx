@@ -10,9 +10,13 @@ export const App = () => {
       <div className={`app ${theme}`}>
         <Header />
         <main className="main">
-          <AppRouter />
+          <div className="container">
+            <AppRouter />
+          </div>
         </main>
-        <footer>footer</footer>
+        <footer>
+          <div className="container">footer</div>
+        </footer>
       </div>
     </>
   );

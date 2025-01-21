@@ -1,4 +1,10 @@
+import { Link } from "react-router-dom";
 import cls from "./Logo.module.scss";
+import { AppRoutes } from "shared/config/routeConfig";
 export const Logo = () => {
-  return <a className={cls.logo}>Market</a>;
+  return (
+    <Link to={AppRoutes.MAIN} className={cls.logo}>
+      Market
+    </Link>
+  );
 };

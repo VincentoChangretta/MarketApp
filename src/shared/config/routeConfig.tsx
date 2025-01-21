@@ -1,7 +1,7 @@
-import { App } from "app/App";
 import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
 import { PagePage } from "pages/PagePage";
+import { RegistrationPage } from "pages/RegistrationPage";
 import { StorePage } from "pages/StorePage";
 import { RouteProps } from "react-router-dom";
 
@@ -10,6 +10,7 @@ export enum AppRoutes {
   ABOUT = "about",
   PAGE = "page",
   STORE = "store",
+  REGISTRATION = "registration",
 }
 
 export const RoutePaths: Record<AppRoutes, string> = {
@@ -17,6 +18,7 @@ export const RoutePaths: Record<AppRoutes, string> = {
   [AppRoutes.ABOUT]: "/about",
   [AppRoutes.PAGE]: "/page",
   [AppRoutes.STORE]: "/store",
+  [AppRoutes.REGISTRATION]: "/registration",
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -35,5 +37,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.STORE]: {
     path: RoutePaths.store,
     element: <StorePage />,
+  },
+  [AppRoutes.REGISTRATION]: {
+    path: RoutePaths.registration,
+    element: <RegistrationPage />,
   },
 };
